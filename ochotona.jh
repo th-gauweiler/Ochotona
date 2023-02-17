@@ -5,7 +5,7 @@ application {
     applicationType monolith,
     packageName de.intagau,
     authenticationType oauth2,
-    prodDatabaseType PostgreSQL,
+    prodDatabaseType postgresql,
     clientFramework react
   }
   entities *
