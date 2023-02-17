@@ -1,0 +1,27 @@
+{
+  "ochotonaApp": {
+    "storageRoom": {
+      "home": {
+        "title": "Storage Rooms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Storage Room",
+        "createOrEditLabel": "Create or edit a Storage Room",
+        "notFound": "No Storage Rooms found"
+      },
+      "created": "A new Storage Room is created with identifier {{ param }}",
+      "updated": "A Storage Room is updated with identifier {{ param }}",
+      "deleted": "A Storage Room is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Storage Room {{ id }}?"
+      },
+      "detail": {
+        "title": "Storage Room"
+      },
+      "id": "ID",
+      "name": "Name",
+      "inherit": "Inherit",
+      "contains": "Contains",
+      "products": "Products"
+    }
+  }
+}

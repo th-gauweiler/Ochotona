@@ -1,0 +1,40 @@
+{
+  "applications": ["ochotona"],
+  "changelogDate": "20230217204241",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "storage_room",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "StorageRoom",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "storage",
+      "ownerSide": true,
+      "relationshipName": "inherit",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "storage",
+      "otherEntityRelationshipName": "storageRoom",
+      "relationshipName": "contains",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "products",
+      "otherEntityRelationshipName": "stored",
+      "relationshipName": "products",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
