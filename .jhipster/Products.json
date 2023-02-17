@@ -1,0 +1,40 @@
+{
+  "applications": ["ochotona"],
+  "changelogDate": "20230217204238",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "products",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ean",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tags",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Products",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "storageRoom",
+      "otherEntityRelationshipName": "products",
+      "relationshipName": "stored",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,4 +1,4 @@
-# Ochotona
+# ochotona
 
 This application was generated using JHipster 7.9.3, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.9.3](https://www.jhipster.tech/documentation-archive/v7.9.3).
 
@@ -239,7 +239,7 @@ jhipster:
 
 ### Packaging as jar
 
-To build the final jar and optimize the Ochotona application for production, run:
+To build the final jar and optimize the ochotona application for production, run:
 
 ```
 ./mvnw -Pprod clean verify
@@ -252,7 +252,7 @@ To ensure everything worked, run:
 java -jar target/*.jar
 ```
 
-Then navigate to [http://localhost:9067](http://localhost:9067) in your browser.
+Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
 
 Refer to [Using JHipster in production][] for more details.
 

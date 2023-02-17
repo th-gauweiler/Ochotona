@@ -1,0 +1,32 @@
+{
+  "applications": ["ochotona"],
+  "changelogDate": "20230217204239",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "stock_position",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "serialNo",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "StockPosition",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "storage",
+      "ownerSide": true,
+      "relationshipName": "inherit",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "no"
+}

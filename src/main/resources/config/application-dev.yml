@@ -18,7 +18,7 @@ logging:
     ROOT: DEBUG
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
-    de.intagau.ochotona: DEBUG
+    de.intagau: DEBUG
 
 spring:
   devtools:
@@ -33,7 +33,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:h2:file:./target/h2db/db/ochotona;DB_CLOSE_DELAY=-1;MODE=LEGACY
-    username: Ochotona
+    username: ochotona
     password:
     hikari:
       poolName: Hikari
@@ -52,7 +52,7 @@ spring:
     cache: false
 
 server:
-  port: 9067
+  port: 8080
 
 # ===================================================================
 # JHipster specific properties

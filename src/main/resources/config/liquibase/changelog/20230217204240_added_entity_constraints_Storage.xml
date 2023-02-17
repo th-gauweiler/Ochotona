@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Storage.
+    -->
+    <changeSet id="20230217204240-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="storage_room_id"
+                                 baseTableName="storage"
+                                 constraintName="fk_storage__storage_room_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="storage_room"/>
+    </changeSet>
+</databaseChangeLog>
