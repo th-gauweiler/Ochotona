@@ -1,0 +1,48 @@
+
+application {
+  config {
+    baseName ochotona,
+    applicationType monolith,
+    packageName de.intagau,
+    authenticationType oauth2,
+    prodDatabaseType PostgreSQL,
+    clientFramework react
+  }
+  entities *
+}
+
+entity Products {
+  name String required
+  url String
+  ean String
+  tags String
+}
+
+entity StockPosition {
+  amount Integer
+  serialNo String
+}
+
+entity Storage {
+  key String required
+}
+
+entity StorageRoom {
+  name String
+}
+
+relationship OneToOne {
+  StorageRoom{inherit required} to Storage
+}
+
+relationship OneToOne {
+  StockPosition{inherit required} to Storage
+}
+
+relationship OneToMany {
+  StorageRoom{contains} to Storage
+}
+
+relationship OneToMany {
+  Products{stored} to StorageRoom
+}
